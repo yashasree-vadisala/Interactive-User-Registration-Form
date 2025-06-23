@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>User Registration</h2>
+    <form>
+      <div class="form-group">
+        <label class="headings">Full Name</label>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="headings">Email Address</label>
+        <input type="email" placeholder="example@mail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label class="headings">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+      </div>
+
+      <div class="form-group">
+        <label class="headings">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+        <small id="message" class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label class="headings">Date of Birth</label>
+        <input type="date" required>
+      </div>
+
+      <div class="form-group">
+        <label class="headings">Gender</label>
+        <select required>
+          <option value="">-- Select --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" required>
+        <label>I accept the Terms and Conditions</label>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
